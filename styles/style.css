@@ -342,9 +342,9 @@ body {
 }
 
 .shopcart {
-    position: relative;
-    top: -25px;
-    left: 40px;
+    position: absolute;
+    top: -3px;
+    left: 80px;
 }
 
 .signin {
@@ -418,112 +418,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-.cartPictures {
-    display: inline-block;
-    margin-top: -10px;
-}
-
-.nkarneriDiver2 {
-    background-color: rgb(247, 247, 247);
-    border: 3px solid rgba(100, 100, 100, 0.418);
-    border-radius: 3px;
-    margin-top: 15px;
-    height: 284.5px;
-}
-
-.himnakanPicturNer2 {
-    width: 285px;
-    height: 280px;
-    background: #ffffff;
-    background: radial-gradient(circle, rgb(255, 251, 251) 0%, rgba(212, 211, 208, 0.98) 100%);
-}
-
-.text14-2 {
-    height: 0;
+.div2 {
     position: relative;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-}
-
-.text15-2 {
-    top: -273px;
-    left: 310px;
-    font-size: 40px;
-    width: 72%;
-    text-align: justify;
-}
-
-.text17-2 {
-    font-size: 31px;
-    letter-spacing: 1px;
-    top: -130px;
-    margin-left: 310px;
-    font-size: 50px;
-    color: rgb(255, 174, 0);
-}
-
-.gniKoxiBary2 {
-    font-weight: 400;
-    font-size: 25px;
-    letter-spacing: -0.5px;
-    color: rgb(0, 0, 0);
-    position: relative;
-}
-
-.AddToCardEj {
-    width: 80px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    left: 450px;
-    top: 20px;
-    border-radius: 16px;
-    height: 50px;
-}
-
-.CardTitle {
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    word-spacing: 6px;
-    letter-spacing: 0.8px;
-    margin-top: -5px;
-}
-
-.cardTitleDiv {
-    padding: 10px;
-    border: 5px solid rgb(35, 12, 12);
-    border-radius: 500px;
-    display: inline-block;
-    background: #ffa56e;
-    background: radial-gradient(circle, rgba(255, 165, 110, 1) 0%, rgba(224, 216, 213, 1) 100%);
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-.CardImg {
-    width: 25px;
-    height: 25px;
-    position: relative;
-}
-
-.Fullscreen {
-    width: 32px;
-    height: 32px;
-    margin-left: 335px;
-}
-
-.Close {
-    width: 37.4px;
-    height: 37.4px;
-    left: 380px;
-    cursor: pointer;
-}
-
-.delete1 {
-    width: 50px;
-    height: 50px;
-    transform: translatey(-62px);
-    margin-left: 95%;
-    cursor: pointer;
+    top: 25px;
+    left: 550px;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Shop</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/card.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
 </head>
@@ -30,12 +31,14 @@
 
         <input type="text" name="text" placeholder="search" id="search">
         <label for="search"></label>
+        
+        <div class="div2">
+            <img src="../images/shopping-basket.png" alt="picture" id="pictureBasket">
+            <p class="shopcart">Shoping Cart</p>
+        </div>
 
-        <img src="../images/shopping-basket.png" alt="picture" id="pictureBasket">
-        <p class="shopcart">Shoping Cart</p>
-
-        <img src="../images/user (2).png" alt="picture" id="pictureMan">
-        <p class="signin">Sign In</p>
+        <a href="./signup.html"><img src="../images/user (2).png" alt="picture" id="pictureMan"></a>
+        <p class="signin">Sign up</p>
 
     </div>
 
@@ -155,7 +158,8 @@
         <div class="cardTitleDiv">
             <p class="CardTitle">your card</p>
         </div>
-        <img src="../images/close (1).png" alt="picture" class="CardImg Close">
+        <!-- <a href="./CardFullscreen.html"><img src="./picture/fullscreen (1).png" alt="picture" class="CardImg Fullscreen"></a> -->
+        <img src="../images/image-removebg-preview.png" alt="picture" class="CardImg Close">
         <div class="cartProducts"></div>
 
     </div>
@@ -163,4 +167,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/card.js"></script>
 </body>
