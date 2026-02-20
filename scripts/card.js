@@ -4,24 +4,24 @@ let cartProductsDiv = document.querySelector(".cartProducts");
 let closse = document.querySelector(".Close")
 
 basket.onclick = function () {
-    if (AddToCardEj.style.display === "block") {
-        AddToCardEj.style.display = "none";
-    } else {
-        AddToCardEj.style.display = "block";
-    }
+  if (AddToCardEj.style.display === "block") {
+    AddToCardEj.style.display = "none";
+  } else {
+    AddToCardEj.style.display = "block";
+  }
 }
 
 closse.onclick = function () {
     if (AddToCardEj.style.display === "block") {
-        AddToCardEj.style.display = "none";
+      AddToCardEj.style.display = "none";
     }
 
-
-
-    let cart = JSON.parse(localStorage.getItem("cart"));
-    cartProductsDiv.innerHTML = ""
-    cart.forEach(product => {
-        cartProductsDiv.innerHTML += `
+    
+    
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  cartProductsDiv.innerHTML = ""
+  cart.forEach(product => {
+    cartProductsDiv.innerHTML += `
       <div class="nkarneriDiver2">
         <img src="${product.image}" alt="picture" class="himnakanPicturNer2">
 

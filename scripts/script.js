@@ -118,14 +118,13 @@ search.addEventListener("input", () => {
 });
 
 function handleAddProduct(id) {
-  let product = allProducts.find(elem => elem.id == id)
+  let product = allProducts.find(element => element.id == id)
   let localData = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+
   if (localData.some(elem => elem.id === id)) {
     localData.forEach(elem => {
       if (elem.id === product.id) {
         elem.count = elem.count ? elem.count + 1 : 2
-        console.log();
-
       }
     });
   } else {
@@ -135,5 +134,4 @@ function handleAddProduct(id) {
 
 
   localStorage.setItem('cart', JSON.stringify(localData))
-
 }
