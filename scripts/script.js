@@ -135,28 +135,3 @@ function handleAddProduct(id) {
 
   localStorage.setItem('cart', JSON.stringify(localData))
 }
-
-window.addEventListener("load", () => {
-  if (localStorage.getItem("isLoggedIn") === "true") {
-    const signinText = document.querySelector(".signin");
-    const pictureMan = document.getElementById("pictureMan");
-    let currentUser = localStorage.getItem("currentUser");
-
-    signinText.textContent = "Welcome, " + currentUser + "!";
-
-    pictureMan.src = "../images/user (2).png";
-
-    let logoutBtn = document.createElement("button");
-    logoutBtn.textContent = "Logout";
-    logoutBtn.style.marginLeft = "10px";
-    signinText.insertAdjacentElement("afterend", logoutBtn);
-
-    logoutBtn.addEventListener("click", () => {
-      localStorage.removeItem("isLoggedIn");
-      localStorage.removeItem("currentUser");
-      signinText.textContent = "Sign In";
-      pictureMan.src = "../images/user (2).png";
-      logoutBtn.remove();
-    });
-  }
-});
